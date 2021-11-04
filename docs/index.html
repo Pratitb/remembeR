@@ -5,142 +5,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css">
     <title>remembeR - an extension to save websites</title>
 </head>
 
 <body class="font-Nunito">
-    <!-- Header -->
+    <!-- Header-->
     <header>
-        <nav class="container mx-auto flex items-center justify-center px-20 py-8">
+        <!-- Navigation -->
+        <nav class="container mx-auto flex items-center justify-center px-20 py-4">
             <div>
-                <h1 class="text-remember-blue-dark text-5xl lg:text-4xl 2xl:text-5xl font-bold">remembeR.</h1>
+                <h1 class="text-remember-blue-dark text-5xl md:text-4xl xl:text-5xl font-bold">remembeR.</h1>
             </div>
-            <ul class="hidden md:flex flex-1 justify-end items-center gap-12 uppercase xl:text-sm font-bold">
-                <li>Features</li>
+            <ul class="hidden md:flex flex-1 justify-end items-center gap-12 uppercase md:text-sm font-bold">
+                <li>
+                    <a href="#features">Features</a>
+                </li>
                 <li>Contact</li>
-                <button type="button" class="btn">Download</button>
+                <li><a href="#download" class="bg-remember-blue-primary px-3 py-2 rounded-lg shadow-lg text-white text-sm uppercase font-bold">Download</a></li>
             </ul>
         </nav>
-        <!-- does not automatically center -->
     </header>
-    <!-- HERO START -->
-    <section class="relative py-12">
+    <!-- Hero -->
+    <section class="">
         <!-- Hero container -->
-        <div class="container flex flex-col-reverse md:flex-row md\:justify-evenly items-center px-10 gap-12">
+        <div class="flex flex-col gap-6 pt-4 pb-12 px-8 md:flex-row md:mt-12">
             <!-- Content -->
-            <div class="flex flex-col flex-1 items-center px-6">
-                <h2 class="heading">Save websites for later.</h2>
-                <p class="description">A browser extension for all websites everything.</p>
-                <div class="flex space-x-4 mt-8">
-                    <button type="button" class="btn">Get for Chrome</button>
-                    <button type="button" class="btn">Get for Firefox</button>
+            <div class="flex flex-col items-center text-center md:items-start lg:flex-1 xl:items-center xl:justify-center">
+                <h2 class="font-bold text-xl 2xl:text-3xl 2xl:mb-2">Save websites for later.</h2>
+                <p class="text-lg 2xl:text-lg">A browser extension for all websites everything.</p>
+                <div class="flex gap-6 mt-8 2xl:mt-8">
+                    <button type="button" class="bg-remember-blue-primary px-3 rounded-lg shadow-lg text-white text-sm 2xl:text-lg 2xl:py-2 font-bold">Get
+                        for Chrome</button>
+                    <button type="button" class="bg-remember-blue-primary px-3 py-2 rounded-lg shadow-lg text-white text-sm 2xl:text-lg 2xl:py-2 font-bold">Get
+                        for Firefox</button>
                 </div>
             </div>
 
 
             <!-- Image -->
-            <div class="content-image-parent order-first">
-                <img class="content-image md:w-11/12" src="images/remember-hero.svg" alt="">
+            <div class="order-first flex justify-center md:flex-1">
+                <img class="w-1/2 md:w-5/6 lg:w-2/3" src="images/remember-hero.svg" alt="">
             </div>
         </div>
 
     </section>
-    <!-- FEATURES SECTION START -->
-    <section class="bg-gray-100 min-h-screen">
-        <!-- Container Start -->
-        <div class="container flex flex-col gap-32 px-10 py-20">
+    <!-- Features -->
+    <section id="features" class="bg-gray-100">
+        <div class="flex flex-col px-8 py-16 gap-10 sm:items-center md:flex-row md:items-start lg:justify-center lg:gap-14 2xl:gap-32">
             <!-- Feature One Start -->
-            <div class="feature-box ">
-                <!-- Content Start -->
-                <div class="feature-content-parent">
-                    <h1 class="heading">Clutter Free</h1>
-                    <p class="description">Our aim is to make things easy for you. Sometimes we do not have the
-                        time
-                        to go through a website and that's where this extension comes into play.</p>
-                </div>
-                <!-- Image Start -->
-                <div class="content-image-parent">
-                    <img class="content-image md:w-full lg:w-2/3 xl:w-1/2" src="images/features-images/remember-features.svg" alt="">
-                </div>
+            <div class="flex flex-col items-center text-center sm:w-1/2 sm:text-justify lg:w-1/4 2xl:w-1/5">
+                <i class="fas fa-tools text-remember-blue-primary fa-3x mb-6"></i>
+                <h1 class="font-bold text-xl 2xl:text-3xl">Clutter Free</h1>
+                <p class="text-lg md:text-base 2xl:text-lg">Our aim is to make things easy for you. Sometimes we do not have the time to go through a website and that's where this extension comes into play.</p>
             </div>
             <!-- Feature Two -->
-            <div class="feature-box">
-                <!-- Content -->
-                <div class="feature-content-parent">
-                    <h2 class="heading">One Click</h2>
-                    <p class="description">No multiple steps. Just one command and done, the page is saved for future
-                        reference.</p>
-                </div>
-                <!-- Image -->
-                <div class="content-image-parent order-first">
-                    <img class="content-image lg:w-2/3 xl:w-1/2" src="images/features-images/one-click.svg" alt="">
-                </div>
+            <div class="flex flex-col items-center text-center sm:w-1/2 sm:text-justify lg:w-1/4 2xl:w-1/5">
+                <i class="fas fa-radiation text-remember-blue-primary fa-3x mb-6"></i>
+                <h2 class="font-bold text-xl 2xl:text-3xl">One Click</h2>
+                <p class="text-lg md:text-base 2xl:text-lg">No multiple steps. Just one command and done, the page is saved for future reference.
+                </p>
             </div>
             <!-- Feature Three -->
-            <div class=" feature-box">
-                <!-- Content -->
-                <div class="feature-content-parent">
-                    <h2 class="heading">Intelligent search</h2>
-                    <p class="description">It's been over a year with the first website saved? No problem. Just type in
-                        some words related to it and boom, the results will show them.</p>
-                </div>
-                <!-- Image -->
-                <div class="content-image-parent">
-                    <img class="content-image lg:w-2/3 xl:w-1/2" src="images/features-images/result.svg" alt="">
-                </div>
+            <div class="flex flex-col items-center text-center sm:w-1/2 sm:text-justify lg:w-1/4 2xl:w-1/5">
+                <i class="fas fa-search-location text-remember-blue-primary fa-3x mb-6"></i>
+                <h2 class="font-bold text-xl 2xl:text-3xl">Intelligent search</h2>
+                <p class="text-lg md:text-base 2xl:text-lg">It's been over a year with the first website saved? No problem. Just type in some words related to it and boom, the results will show them.</p>
             </div>
         </div>
     </section>
-    <!-- BROWSER COMPATIBILITY -->
-    <section>
-        <div class="container flex flex-col items-center px-10 py-20 text-center">
+    <!-- Browser compatibility -->
+    <section id="download">
+        <div class="flex flex-col items-center px-8 py-16">
             <div class="mb-8">
-                <h2 class="text-4xl font-bold mb-2">Cross-Browser Compatibility</h2>
+                <h2 class="text-4xl font-bold text-center">Cross-Browser Compatibility</h2>
             </div>
-            <div class="flex flex-wrap sm:flex-nowrap gap-10">
-                <div class="flex flex-col items-center w-1/4 mb-8">
-                    <img class="w-16 mb-4" src="images/browser-icons/chrome.png" alt="">
-                    <button type="button" class="border border-current text-gray-500 px-4 rounded-md">Add</button>
+            <div class="flex gap-4 sm:gap-8">
+                <div class="flex flex-col items-center">
+                    <img class="w-8 mb-4" src="images/browser-icons/chrome.png" alt="">
+                    <button type="button" class="border border-current text-gray-500 px-4 rounded-md text-sm">Add</button>
                 </div>
-                <div class="flex flex-col items-center w-1/4 mb-8">
-                    <img class="w-16 mb-4" src="images/browser-icons/firefox.png" alt="">
-                    <button type="button" class="border border-current text-gray-500 px-4 rounded-md">Add</button>
+                <div class="flex flex-col items-center">
+                    <img class="w-8 mb-4" src="images/browser-icons/firefox.png" alt="">
+                    <button type="button" class="border border-current text-gray-500 px-4 rounded-md text-sm">Add</button>
                 </div>
-                <div class="flex flex-col items-center w-1/4">
-                    <img class="w-16 mb-4" src="images/browser-icons/safari.png" alt="">
-                    <button type="button" class="border border-current text-gray-500 px-4 rounded-md">Add</button>
+                <div class="flex flex-col items-center">
+                    <img class="w-8 mb-4" src="images/browser-icons/safari.png" alt="">
+                    <button type="button" class="border border-current text-gray-500 px-4 rounded-md text-sm">Add</button>
                 </div>
-                <div class="flex flex-col items-center w-1/4">
-                    <img class="w-16 mb-4" src="images/browser-icons/opera.png" alt="">
-                    <button type="button" class="border border-current text-gray-500 px-4 rounded-md">Add</button>
+                <div class="flex flex-col items-center">
+                    <img class="w-8 mb-4" src="images/browser-icons/opera.png" alt="">
+                    <button type="button" class="border border-current text-gray-500 px-4 rounded-md text-sm">Add</button>
                 </div>
             </div>
         </div>
 
     </section>
-    <!-- NEWSLETTER START -->
-    <section class="bg-gray-100">
-        <div class="container flex flex-col items-center px-10 py-20 text-center">
-            <div>
+    <!-- Newsletter -->
+    <section class="bg-gray-100 flex flex-col items-center px-8 py-16">
+        <div class="flex flex-col sm:flex-row lg:justify-evenly">
+            <div class="text-center sm:text-left lg:w-1/2">
                 <p>500+ already using it.</p>
-                <h1 class="text-4xl font-bold mb-12">Stay updated with new features.</h1>
+                <h1 class="text-4xl font-bold mb-8">Stay updated with new features.</h1>
             </div>
             <div class="flex flex-col text-center">
                 <label for="email" class="mb-2">Please enter your email address:</label>
                 <input type="email" name="email-id" id="email" class="w-80 border p-2 mb-4" placeholder="Type here...">
-                <button type="submit" class="btn">Subscribe</button>
+                <a href="#download" class="bg-remember-blue-primary px-3 py-2 rounded-lg shadow-lg text-white text-sm uppercase font-bold">Subscribe</a>
             </div>
         </div>
     </section>
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer class="flex justify-between px-5 py-2 bg-gray-100 border-t-2 border-remember-blue-dark">
         <div>
             <h1 class="text-remember-blue-dark text-xl lg:text-2xl font-bold">remembeR.</h1>
         </div>
         <div class="flex items-center">
             <p>Copyright &copy;
-                <script>document.write(new Date().getFullYear());</script>
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
             </p>
         </div>
     </footer>
